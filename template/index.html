@@ -1,0 +1,143 @@
+<!--  how to use css in python_ flask-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--  Load CSS -->
+  <link rel="stylesheet" href='/static/style.css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="MainContainer">
+    <div id="HeaderContainer">
+      <div id="PrinterLogoContainer">
+        <img id="PrinterLogo" src="/static/printer_small.png" alt="printer logo">
+      </div>
+      <h1 id="MainHeader">Printserver</h1>
+    </div>
+    <div id="HeaderTextContainer" class="ContentContainerItem">
+      <div id="HeaderText">On this page you can monitor the local printer status and print files from your device.
+      </div>
+    </div>
+
+    <div class="VerticalSpacer"></div>
+
+    <!-- Status Containers -->
+    <div id="StatusContentContainer">
+      <!-- Container with network specific info -->
+      <div id="NetworkContainer" class="ContentContainerItem">
+        <h2 id="NetworkContainerHeader">
+          Network
+        </h2>
+        <div class="ContentContainerInnerWrapper">
+          <div id="NetworkStatus" class="ContainerItem">
+            Network status:
+          </div>
+          <div id="NetworkStatusValue" class="ContainerItemValue">
+            Not connected
+          </div>
+          <div id="IP" class="ContainerItem">
+            IP:
+          </div>
+          <div id="IPValue" class="ContainerItemValue">
+            0.0.0.0
+          </div>
+          <div id="Domain" class="ContainerItem">
+            Domain name:
+          </div>
+          <div id="DomainValue" class="ContainerItemValue">
+            No domain name
+          </div>
+        </div>
+      </div>
+
+      <!-- Container with printer specific info -->
+      <div id="PrinterContainer" class="ContentContainerItem">
+        <h2 id="PrinterContainerHeader">
+          Printer
+        </h2>
+        <div class="ContentContainerInnerWrapper">
+          <div id="PrinterStatus" class="ContainerItem">
+            Printer status:
+          </div>
+          <div id="PrinterStatusValue" class="ContainerItemValue">
+            None
+          </div>
+          <div id="PrinterName" class="ContainerItem">
+            Printer name:
+          </div>
+          <div id="PrinterNameValue" class="ContainerItemValue">
+            None
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="VerticalSpacer"></div>
+
+    <!-- Print Container -->
+    <div id="PrintContainer" class="ContentContainerItem">
+      <h2 id="PrintContainerHeader">
+        Print
+      </h2>
+      <div class="PrintContainerInnerWrapper">
+        <div id="PrinterContainerDragNDrop">
+          <div id="PrinterContainerDragNDropBorder">
+            <h3 id="ChooseFileHeader">
+              Click to choose a file or
+            </h3>
+            <h3 id="DragNDropHeader">
+              Drag & Drop a File to Print
+            </h3>
+            <div id="DragNDropLogoContainer">
+              <img id="DragNDropLogo" src="/static/upload_file_small.png" alt="drag and drop logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="VerticalSpacer"></div>
+
+    <!-- Queue Container -->
+    <div id="PrinterQueueContainer" class="ContentContainerItem">
+      <h2 id="PrinterQueueHeader">
+        Queue
+      </h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Job ID</th>
+            <th>Document Name</th>
+            <th>User</th>
+            <th>Pages</th>
+            <th>Status</th>
+            <th>Submitted Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>101</td>
+            <td>Report.pdf</td>
+            <td>John Doe</td>
+            <td>10</td>
+            <td>Printing</td>
+            <td>2024-06-21 10:15 AM</td>
+          </tr>
+          <tr>
+            <td>102</td>
+            <td>Proposal.docx</td>
+            <td>Jane Smith</td>
+            <td>5</td>
+            <td>Queued</td>
+            <td>2024-06-21 11:30 AM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</body>
+
+</html>

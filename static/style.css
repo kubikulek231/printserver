@@ -1,0 +1,166 @@
+body {
+  background: rgb(46, 46, 46);
+  width: fit-content;
+  margin: auto;
+  font-family: Georgia;
+  font-size: 1.2rem;
+  color: lightgrey;
+}
+
+h1, h2, h3 {
+  font-family: Verdana, Geneva, sans-serif;
+  color: lightgrey;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+#HeaderContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: auto;
+}
+
+#PrinterLogoContainer {
+  padding: 1rem;
+}
+
+#PrinterLogo {
+  max-width: 4.5rem;
+  max-height: 4.5rem;
+  margin: auto;
+  height: auto;
+  width: auto;
+}
+
+#MainContainer {
+  margin: auto;
+  width: 100%;
+}
+
+.ContentContainerInnerWrapper {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+#StatusContentContainer {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 600px) {
+  #StatusContentContainer {
+      grid-template-columns: 1fr;
+  }
+}
+
+.ContentContainerItem {
+  width: 100%;
+  background-color: rgb(33, 33, 33);
+  padding: 0.8rem;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.VerticalSpacer {
+  height: 0.8rem;
+}
+
+#PrinterContainerDragNDrop {
+  border-radius: 5px;
+  background-color: darkcyan;
+  align-content: center;
+  padding: 0.8rem;
+}
+
+#PrinterContainerDragNDropBorder {
+  border: lightgrey 2px dashed; 
+  border-radius: 5px;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  transition: background-color 0.25s ease;
+}
+
+#PrinterContainerDragNDropBorder:hover {
+  background-color: rgb(0, 70, 70);
+  cursor: pointer;
+}
+
+#DragNDropHeader, #ChooseFileHeader {
+  width: 100%;
+  pointer-events: none;
+  user-select: none;
+  text-align: center;
+}
+
+#DragNDropLogoContainer {
+  margin: auto;
+  margin-top: 0.8rem;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+  user-select: none;
+}
+
+#DragNDropLogo {
+  width: 50px;
+  margin: auto;
+}
+
+#HeaderTextContainer {
+  background-color: rgb(33, 33, 33);
+  padding: 0.8rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#HeaderText {
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+  overflow: hidden;
+  border: 1px solid rgb(122, 122, 122);
+}
+
+th {
+  background-color: darkcyan;
+  font-style: italic;
+  font-weight: 100;
+}
+
+tr {
+  border: 1px solid rgb(122, 122, 122);
+}
+
+tr:nth-child(even) {
+  background-color: rgb(59, 59, 59);
+}
+
+tr:hover {
+  background-color: rgb(0, 70, 70);
+}
